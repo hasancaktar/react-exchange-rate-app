@@ -2,7 +2,7 @@ import {useState} from "react";
 import Header from "../components/Header";
 import {useApiService} from "../services/ApiService";  // useApiService olarak import et
 import ExchangeRateView from "../components/ExchangeRateView";
-import Carosel from "../components/Carosel.jsx";
+import Carousel from "../components/Carousel.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header/>
-            <Carosel currencies={res}/>
+            <Carousel currencies={res}/>
             <ExchangeRateView currencies={res}/>
             <Footer/>
         </div>

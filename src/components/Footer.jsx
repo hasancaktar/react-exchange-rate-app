@@ -1,4 +1,4 @@
-import {FaGithub, FaLinkedin} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="cursor-pointer text-teal-400 hover:text-teal-600 transition-all duration-300" onClick={()=>{window.open("https://github.com/hasancaktar/react-exchange-rate-app","_blank")}}>
                 <FaGithub size={30}/>
             </div>
-            <div className="mx-5"></div>
+            {/*<div className="mx-5"></div>*/}
         </footer>
     );
 }

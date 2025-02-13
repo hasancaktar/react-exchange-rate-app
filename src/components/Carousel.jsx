@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-export default function Carosel({currencies}) {
+export default function Carousel({currencies}) {
     return (
        <div className="mt-5"> <Marquee speed={50} autoFill={true} gradient={false}>
            {Object.keys(currencies).map((currency, i) => (
